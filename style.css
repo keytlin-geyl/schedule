@@ -1,0 +1,150 @@
+@font-face {
+  font-family: angelo;
+  src: url(angelo.ttf);
+}
+
+body {
+    background: #7ad2c6;
+    background-image: url('background.svg');
+    background-size: cover;
+    background-position: center;
+    min-height:100vh;
+    overflow: hidden;
+}
+
+.container{
+  padding-top: 10px;
+}
+caption{
+  font-weight: 300%;
+  color: white;
+  font-size: 36px;
+  -webkit-text-stroke: 1px black;
+  font-family: 'Libre Franklin', sans-serif;
+}
+table{
+  border-spacing: 5px;
+  text-align: center;
+  width: 80%;
+  table-layout: auto ;
+  z-index: 2;
+  display: block;
+  position: absolute;
+}
+th{
+  font-family: 'Libre Franklin', sans-serif;
+  background: white;
+  border: 1px solid;
+  padding: 10px;
+  font-size: 28px;
+}
+td{
+  border: 1px solid;
+  padding: 30px;
+  font-family: 'angelo';
+  font-size: 30px;
+}
+a{
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+td a:hover{
+  color: #0C635D;
+}
+.sub1{
+  background-color: #99ffb9;
+}
+.sub2{
+  background-color: #d4f5c9;
+}
+.sub3{
+  background-color: #d7ffbc;
+}
+.sub4{
+  background-color: #aaff99;
+}
+.side{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 0;
+  text-align: center;
+}
+.box{
+  background: #B4DED4;
+  border-radius: 30%;
+  width: 180px;
+  height: 150px;
+  margin-left: 110px ;
+  align-items: center;
+}
+p{
+  text-align: center;
+  color: #0C635D;
+  font-weight: bold;
+  margin-top: 25px;
+  position: relative;
+  top: 30px;
+}
+img{
+  width: 300px;
+}
+.socials .fa{
+    /*display: inline-block;*/
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    color: #0C635D;
+    background-color: whitesmoke;
+    margin: 25px 15px 5px 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    justify-content: space-between;
+}
+.socials .fa:hover{
+    color: #B4DED4;
+    background-color: #0C635D;
+}
+
+/*------------Phone Portrait Orientation--------*/
+
+@media screen and (max-width:700px) {
+  body{
+    min-height: 100vh;
+  }
+  .container{
+  }
+  table{
+    width: 100%;
+    table-layout: auto;
+    margin-left: -10px;
+  }
+  th{
+    padding: 0;
+  }
+  td{
+    font-size: 20px;
+    padding: 10px;
+  }
+  .box{
+    position: relative;
+    left: -140px;
+    top: 150px;
+  }
+  p{
+    text-align: left;
+    position: relative;
+    margin-left: 30px;
+  }
+  img{
+    width: 320px;
+    bottom: -10px;
+    right: -200px;
+  }
+  
+
+}
